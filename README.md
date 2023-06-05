@@ -2,25 +2,25 @@
 
 # EXP: 5
 
-# DATE:05-04-2023
+# DATE:06-04-2023
 
 # AIM:
 To write a python program for implementing  Reverse Address Resolution Protocol(RARP).
 
 # ALGORITHM:
-# Client:
+## Client:
 1. Start the program
 2. Using datagram sockets UDP function is established.
 3. Get the MAC address to be converted into IP address.
 4. Send this MAC address to server.
 5. Server returns the IP address to client.
-# Server:
+## Server:
 1. Start the program.
 2. Server maintains the table in which IP and corresponding MAC addresses are stored.
 3. Read the MAC address which is send by the client.
 4. Map the IP address with its MAC address and return the IP address to client.
 # PROGRAM:
-# CLIENT:
+## CLIENT:
 ```python3
 import socket
 s = socket.socket()
@@ -36,7 +36,7 @@ while True:
        c.send("Not found".encode())
 
   ```
-# SERVER:
+## SERVER:
 ```python3
 import socket
 s=socket.socket()
